@@ -1,5 +1,5 @@
 # Content Shift in Diffusion Features
-Official repository of NeurIPS'24 paper [Suppress Content Shift: Better Diffusion Features via Off-the-Shelf Generation Techniques](https://github.com/Darkbblue/diffusion-content-shift).
+Official repository of NeurIPS'24 paper [Suppress Content Shift: Better Diffusion Features via Off-the-Shelf Generation Techniques](https://arxiv.org/abs/2410.06719).
 
 ## Introduction
 Diffusion feature is a quite popular way to utilize **generative** diffusion models for **discrimination**.
@@ -46,3 +46,14 @@ For the detailed instructions to reproduce each task, check out the correspondin
 - `segmentation`: semantic segmentation.
 
 ## Citation
+```text
+@misc{meng2024suppresscontentshiftbetter,
+      title={Suppress Content Shift: Better Diffusion Features via Off-the-Shelf Generation Techniques}, 
+      author={Benyuan Meng and Qianqian Xu and Zitai Wang and Zhiyong Yang and Xiaochun Cao and Qingming Huang},
+      year={2024},
+      eprint={2410.06719},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.06719}, 
+}
+```
