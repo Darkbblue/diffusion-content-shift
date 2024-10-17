@@ -24,12 +24,14 @@ pipeline = StableDiffusionPipeline.from_pretrained(
     safety_checker=None
 )
 pipeline = StableDiffusionPipeline.from_single_file(
-    merged_ckpt,
+    pretrained_model_link_or_path=merged_ckpt,
+    config=model_id_local,
     original_config_file=os.path.join(model_id_local, 'v1-inference.yaml'),
     tokenizer=pipeline.tokenizer,
     text_encoder=pipeline.text_encoder,
     torch_dtype=torch.float16,
-    load_safety_checker=False,
+    feature_extractor=None,
+    safety_checker=None,
 )
 
 pipeline.save_pretrained(output_dir, safe_serialization=True)
